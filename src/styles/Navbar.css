@@ -1,0 +1,26 @@
+.navbar {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  cursor: pointer;
+}
+
+.nav-item.active .item-content {
+  position: relative;
+}
+
+.nav-item.active .item-content::after {
+  content: "";
+  width: 99%;
+  height: 0.3rem;
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0;
+  background: var(--bright-blue);
+  border-radius: 1rem;
+}
