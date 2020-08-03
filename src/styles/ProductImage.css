@@ -74,7 +74,12 @@
     margin: 0.5rem 0 0 0.5rem;
   }
 }
+
 @media (max-width: 480px) {
+  .product-image {
+    height: 12rem;
+  }
+
   .icons-cont {
     height: 5rem;
     display: grid;

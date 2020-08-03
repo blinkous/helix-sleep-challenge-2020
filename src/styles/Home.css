@@ -38,10 +38,18 @@
 
 @media (max-width: 1024px) {
   .logo {
-    width: 80%;
-    max-width: 20rem;
+    width: 16rem;
     position: absolute;
     right: var(--padding);
+  }
+
+  .main-header {
+    position: sticky;
+    top: 0;
+    background: var(--background-main);
+    padding-top: 1.75rem;
+    margin-top: 0;
+    --padding-top: 1.75rem;
   }
 }
 
@@ -49,11 +57,5 @@
   .main-content {
     display: block;
     padding: 0 var(--padding);
-  }
-}
-
-@media (max-width: 1024px) {
-  .logo {
-    max-width: 16rem;
   }
 }

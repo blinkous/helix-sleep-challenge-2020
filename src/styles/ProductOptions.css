@@ -55,3 +55,9 @@
   font-size: 0.7rem;
   background: var(--light-gray-2);
 }
+
+@media (max-width: 768px) {
+  .fabric-option {
+    height: 30vw;
+  }
+}

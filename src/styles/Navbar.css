@@ -71,6 +71,8 @@
     transition: var(--transition-time) all;
     transform-origin: 0% 0%;
     z-index: 1;
+    position: relative;
+    top: var(--padding-top);
   }
 
   .navbar.show-menu {
@@ -89,12 +91,12 @@
   }
 
   .hamburger-menu-container {
-    --height: 0.25rem;
+    --height: 0.2rem;
     --bar-spacing: calc(var(--height) * -2.5);
     height: calc(var(--height) * 6);
-    width: 2rem;
+    width: 1.9rem;
     position: absolute;
-    top: var(--padding);
+    top: 2.5rem;
     left: var(--padding);
     cursor: pointer;
     z-index: 2;
@@ -130,11 +132,11 @@
     bottom: calc(var(--bar-spacing) * 2);
   }
   .hamburger-menu.close-btn {
-    transform: rotate(45deg);
+    transform: rotate(42deg);
   }
   .hamburger-menu.close-btn::after {
     transform-origin: 0% 0%;
-    transform: rotate(-90deg) translate(5%, 350%);
+    transform: rotate(-85deg) translate(5%, 350%);
   }
   .hamburger-menu.close-btn::before {
     opacity: 0;
@@ -142,9 +144,8 @@
   }
 }
 
-@media (max-width: 480px) {
-  .hamburger-menu-container {
-    --height: 0.8vw;
-    width: 7vw;
+@media (max-width: 768px) {
+  .navbar {
+    width: calc(100vw - var(--padding) * 2);
   }
 }
