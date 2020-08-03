@@ -9,6 +9,10 @@ body,
   width: 100%;
 }
 
+html {
+  min-width: 300px;
+}
+
 body {
   --dark-gray: #4b4b4b;
   --gray: #444444;
@@ -42,6 +46,6 @@ body {
 
 @media (max-width: 480px) {
   body {
-    /* --padding: 0.5rem; */
+    --padding: 0.5rem;
   }
 }
