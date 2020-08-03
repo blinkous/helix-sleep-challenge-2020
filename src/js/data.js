@@ -2,18 +2,28 @@ const rootUrl = `https://helixsleep-code-challenge.s3.amazonaws.com/`;
 
 export const Logo = `${rootUrl}logo.svg`;
 
-export const ProductOptions = {
-  Amber: `${rootUrl}sofa-amber.jpg`,
-  Charcoal: `${rootUrl}sofa-charcoal.jpg`,
-  Red: `${rootUrl}sofa-red.jpg`,
+export const ProductInfo = {
+  name: "The Sofa",
+  desc:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dui interdum, tincidunt velit sit amet.",
+  price: 1450,
+  promotion: { price: 1250, discount: 200 },
+  payment_plan: { plan_name: "Klarna", rate: 25 },
+  fabric_options: {
+    Amber: `${rootUrl}sofa-amber.jpg`,
+    Charcoal: `${rootUrl}sofa-charcoal.jpg`,
+    Red: `${rootUrl}sofa-red.jpg`,
+  },
 };
 
-export const IconOptions = {
+export const Icons = {
   Padlock: `${rootUrl}padlock.png`,
-  "Free Shipping": `${rootUrl}free-shipping.png`,
-  "365 Day Trial": `${rootUrl}trial.png`,
-  "Made In America": `${rootUrl}made-in-america.png`,
-  "10 Year Warranty": `${rootUrl}warranty.png`,
-  "Super Easy Assembly": `${rootUrl}assembly.png`,
-  "High Quality Materials": `${rootUrl}materials.png`,
+  product_icons: {
+    "Free Shipping": `${rootUrl}free-shipping.svg`,
+    "365 Day Trial": `${rootUrl}trial.svg`,
+    "Made In America": `${rootUrl}made-in-america.svg`,
+    "10 Year Warranty": `${rootUrl}warranty.svg`,
+    "Super Easy Assembly": `${rootUrl}assembly.svg`,
+    "High Quality Materials": `${rootUrl}materials.svg`,
+  },
 };

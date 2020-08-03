@@ -6,6 +6,11 @@
   left: 0;
 }
 
+.accent-font {
+  font-family: "Bungee", cursive;
+  letter-spacing: 0.05rem;
+}
+
 .logo {
   width: 23%;
   height: auto;
@@ -16,6 +21,13 @@
 .main-header {
   margin-top: 2.5rem;
   position: relative;
+  min-height: 5rem;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: var(--padding);
 }
 
 @media (max-width: 1024px) {
