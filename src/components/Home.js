@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Home.css";
 import Navbar from "./Navbar";
+import ProductImage from "./ProductImage";
+import ProductDesc from "./ProductDesc";
+import { ProductOptions, IconOptions, Logo } from "../js/data";
 
 const Home = () => {
   const mediaQuery = "(max-width: 1024px)";
@@ -21,15 +24,13 @@ const Home = () => {
   return (
     <div id="home">
       <header className="main-header">
-        <img
-          src="https://helixsleep-code-challenge.s3.amazonaws.com/logo.svg"
-          alt="Allday"
-          height="51"
-          width="326"
-          className="logo"
-        />
+        <img src={Logo} alt="Allday" height="51" width="326" className="logo" />
         <Navbar matches={mediaMatches}></Navbar>
       </header>
+      <main>
+        <ProductImage></ProductImage>
+        <ProductDesc></ProductDesc>
+      </main>
     </div>
   );
 };
