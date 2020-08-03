@@ -9,6 +9,10 @@
   color: var(--dark-blue);
 }
 
+.product-desc-title {
+  display: none;
+}
+
 .product-desc {
   margin-top: 0.5rem;
   font-size: 0.85rem;
@@ -78,4 +82,21 @@
   border-bottom: 0.2rem solid var(--bright-blue);
   width: fit-content;
   margin: 0.6rem auto;
+}
+
+@media (max-width: 768px) {
+  .product-desc-cont {
+    border-bottom: 0.1rem solid white;
+    padding-bottom: 1.5rem;
+  }
+
+  .product-desc-cont .product-name {
+    display: none;
+  }
+
+  .product-desc-title {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
 }

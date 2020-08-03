@@ -8,7 +8,8 @@ const ProductImage = (props) => {
 
   return (
     <div className="product-image-cont">
-      <div className="product-header">
+      <h3 className="product-name accent-font">{productName}</h3>
+      <div className="product-info">
         <p className="secure" style={{ backgroundImage: `url(${padlock})` }}>
           {secure}
         </p>

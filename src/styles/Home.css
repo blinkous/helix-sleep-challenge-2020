@@ -44,3 +44,16 @@
     right: var(--padding);
   }
 }
+
+@media (max-width: 768px) {
+  .main-content {
+    display: block;
+    padding: 0 var(--padding);
+  }
+}
+
+@media (max-width: 1024px) {
+  .logo {
+    max-width: 16rem;
+  }
+}

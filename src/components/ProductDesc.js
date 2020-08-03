@@ -9,6 +9,7 @@ const ProductDesc = (props) => {
   return (
     <div className="product-desc-cont">
       <h3 className="product-name accent-font">{name}</h3>
+      <h6 className="product-desc-title">Description</h6>
       <p className="product-desc">{desc}</p>
 
       <div className="payment-options">
