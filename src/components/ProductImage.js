@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "../styles/ProductImage.css";
-import { ProductInfo, Icons, Logo } from "../js/data";
 
 const ProductImage = (props) => {
   const secure = "Secure Checkout";

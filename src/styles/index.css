@@ -20,9 +20,8 @@ body {
   --light-gray-2: #e8e8e8;
   --dark-blue: #0547a0;
   --bright-blue: #0d6ef0;
-  --red-accent: #ef0e11;
-  --dark-red-accent: #c6232d;
-  --background-main: var(--light-gray);
+  --red: #ef0e11;
+  --background-main: #f2f2f2;
   --foreground-main: var(--gray);
   --nav-foreground: var(--dark-gray);
   --padding: 2rem;

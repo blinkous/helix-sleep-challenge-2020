@@ -1,0 +1,22 @@
+.fabric-option-cont {
+  font-size: 0.85rem;
+  padding-top: 2rem;
+}
+
+.fabric-option-cont * {
+  margin: 0;
+}
+
+.choose-fabric {
+  color: var(--dark-blue);
+}
+
+.fabric-info {
+  margin-top: 0.2rem;
+}
+
+.fabric-choices {
+  color: var(--dark-gray);
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+}

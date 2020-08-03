@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../styles/Home.css";
 import Navbar from "./Navbar";
 import ProductImage from "./ProductImage";
-import ProductDesc from "./ProductDesc";
+import ProductDetails from "./ProductDetails";
 import { ProductInfo, Icons, Logo } from "../js/data";
 
 const Home = () => {
@@ -44,11 +44,11 @@ const Home = () => {
           icons={Icons["product_icons"]}
           productName={ProductInfo.name}
         ></ProductImage>
-        <ProductDesc
+        <ProductDetails
           fabricSelection={setNewFabric}
           fabricOptions={fabric_options}
           productInfo={ProductInfo}
-        ></ProductDesc>
+        ></ProductDetails>
       </main>
     </div>
   );

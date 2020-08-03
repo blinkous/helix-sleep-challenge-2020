@@ -4,11 +4,11 @@
   position: absolute;
   top: 0;
   left: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 .accent-font {
   font-family: "Bungee", cursive;
-  letter-spacing: 0.05rem;
 }
 
 .logo {
@@ -19,15 +19,15 @@
 }
 
 .main-header {
-  margin-top: 2.5rem;
+  margin-top: 1.75rem;
   position: relative;
-  min-height: 5rem;
+  min-height: 5.75rem;
 }
 
 .main-content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
   column-gap: var(--padding);
+  grid-template-columns: minmax(64%, 2fr) minmax(32%, 1fr);
 }
 
 @media (max-width: 1024px) {

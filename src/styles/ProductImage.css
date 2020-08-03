@@ -1,9 +1,14 @@
 .product-header {
   color: var(--dark-gray);
-  font-size: 75%;
+  font-size: 0.75rem;
   letter-spacing: 0.05rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.secure,
+.shipping-time {
+  margin-top: 0.5rem;
 }
 
 .secure {

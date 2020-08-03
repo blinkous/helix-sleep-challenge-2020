@@ -1,19 +1,20 @@
 .main-nav {
   width: 100%;
-  font-family: "Bungee", cursive;
-  letter-spacing: 0.05rem;
-  color: var(--dark-gray);
   position: absolute;
   top: 1rem;
   left: 0;
   max-width: 1520px;
+  font-family: "Bungee", cursive;
+  font-size: 0.85rem;
+  letter-spacing: 0.05rem;
+  color: var(--dark-gray);
 }
 
 .navbar {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, auto) minmax(35%, auto) repeat(2, auto);
+  grid-template-columns: repeat(3, 7rem) minmax(35%, auto) repeat(2, 7rem);
   grid-template-rows: 1fr;
 }
 
