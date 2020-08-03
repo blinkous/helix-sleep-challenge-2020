@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import "../styles/Home.css";
 import Navbar from "./Navbar";
 import ProductImage from "./ProductImage";
-import ProductDetails from "./ProductDetails";
 import { ProductInfo, Icons, Logo } from "../js/data";
+import ProductDesc from "./ProductDesc";
+import ProductOptions from "./ProductOptions";
 
 const Home = () => {
   const mediaQuery = "(max-width: 1024px)";
@@ -37,6 +38,7 @@ const Home = () => {
         <img src={Logo} alt="Allday" height="51" width="326" className="logo" />
         <Navbar matches={mediaMatches}></Navbar>
       </header>
+
       <main className="main-content">
         <ProductImage
           activeFabric={activeFabric}
@@ -44,11 +46,14 @@ const Home = () => {
           icons={Icons["product_icons"]}
           productName={ProductInfo.name}
         ></ProductImage>
-        <ProductDetails
-          fabricSelection={setNewFabric}
-          fabricOptions={fabric_options}
-          productInfo={ProductInfo}
-        ></ProductDetails>
+
+        <div className="product-details">
+          <ProductDesc productInfo={ProductInfo}></ProductDesc>
+          <ProductOptions
+            fabricOptions={fabric_options}
+            fabricSelectionHandler={setNewFabric}
+          ></ProductOptions>
+        </div>
       </main>
     </div>
   );

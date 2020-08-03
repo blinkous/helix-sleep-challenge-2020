@@ -1,8 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../styles/ProductOptions.css";
 
 const ProductOptions = (props) => {
-  const { fabricOptions } = props;
+  const { fabricOptions, fabricSelectionHandler } = props;
+  const [activeOption, setActiveOption] = useState(
+    Object.keys(fabricOptions)[2]
+  );
+
+  const handleFabricSelection = ({ currentTarget }) => {
+    fabricSelectionHandler(currentTarget.id);
+    setActiveOption(currentTarget.id);
+  };
 
   return (
     <div className="fabric-option-cont">
@@ -13,9 +21,14 @@ const ProductOptions = (props) => {
 
       <div className="fabric-options">
         {Object.entries(fabricOptions).map(([key, value], index) => (
-          <figure className="fabric-option" key={index}>
-            <img src={value} alt={key} />
-            <figcaption>{key}</figcaption>
+          <figure
+            className={`fabric-option${activeOption === key ? " active" : ""}`}
+            key={index}
+            id={key}
+            onClick={handleFabricSelection}
+          >
+            <img src={value} alt={key} className="fabric-image" />
+            <figcaption className="fabric-caption">{key}</figcaption>
           </figure>
         ))}
       </div>

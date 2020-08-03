@@ -5,6 +5,7 @@
   top: 0;
   left: 0;
   font-family: "Raleway", sans-serif;
+  font-weight: 300;
 }
 
 .accent-font {
@@ -28,6 +29,11 @@
   display: grid;
   column-gap: var(--padding);
   grid-template-columns: minmax(64%, 2fr) minmax(32%, 1fr);
+}
+
+.product-details * {
+  max-width: 100%;
+  color: var(--gray);
 }
 
 @media (max-width: 1024px) {
