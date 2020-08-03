@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Home.css";
 import Navbar from "./Navbar";
 
 const Home = () => {
-  const items = ["The Sofa", "Reviews", "About Us", "Showroom", "Swatches"];
+  const mediaQuery = "(max-width: 1024px)";
+  const [mediaMatches, setMediaMatches] = useState(
+    window.matchMedia(mediaQuery).matches
+  );
+
+  const handleMediaMatchChange = ({ matches }) => {
+    setMediaMatches(matches);
+  };
+
+  useEffect(() => {
+    window
+      .matchMedia(mediaQuery)
+      .addEventListener("change", handleMediaMatchChange);
+  }, []);
 
   return (
     <div id="home">
@@ -15,9 +28,7 @@ const Home = () => {
           width="326"
           className="logo"
         />
-        <nav className="main-nav">
-          <Navbar items={items}></Navbar>
-        </nav>
+        <Navbar matches={mediaMatches}></Navbar>
       </header>
     </div>
   );
