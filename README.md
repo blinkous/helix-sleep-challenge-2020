@@ -3,12 +3,11 @@
 Available for viewing here:
 [https://blinkous.github.io/helix-sleep-challenge-2020/](https://blinkous.github.io/helix-sleep-challenge-2020/)
 
+#### To run locally:
+
+1. Clone/download the repo
+2. Run `yarn install`
+3. Run `yarn start`
+   The project should open at [http://localhost:3000](http://localhost:3000)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
