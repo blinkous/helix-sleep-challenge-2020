@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "../styles/Navbar.css";
+import { NavbarItems } from "../js/data";
 
-const Navbar = (props) => {
-  const items = ["The Sofa", "Reviews", "About Us", "Showroom", "Swatches"];
-  const [activeItem, setActiveItem] = useState(items[0]);
+const Navbar = () => {
+  const [activeItem, setActiveItem] = useState(NavbarItems[0]);
   const [showHammy, setShowHammy] = useState(false);
 
   const handleMenuItemClick = (newActiveNum) => {
-    setActiveItem(items[newActiveNum]);
+    setActiveItem(NavbarItems[newActiveNum]);
   };
 
   const toggleHamburgerMenu = () => {
@@ -19,8 +19,9 @@ const Navbar = (props) => {
       <div className="hamburger-menu-container" onClick={toggleHamburgerMenu}>
         <div className={`hamburger-menu${showHammy ? " close-btn" : ""}`}></div>
       </div>
+
       <ul className={`navbar${showHammy ? " show-menu" : ""}`}>
-        {items.map((item, index) => (
+        {NavbarItems.map((item, index) => (
           <li
             className={`nav-item item-${index}${
               activeItem === item ? " active" : ""

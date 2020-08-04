@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import "../styles/Home.css";
+import "../styles/ProductHome.css";
 import Navbar from "./Navbar";
 import ProductImage from "./ProductImage";
 import { ProductInfo, Icons, Logo } from "../js/data";
 import ProductDesc from "./ProductDesc";
 import ProductOptions from "./ProductOptions";
 
-const Home = () => {
+const ProductHome = () => {
   const { fabric_options } = ProductInfo;
   const [activeFabric, setFabric] = useState(fabric_options["Red"]);
 
@@ -27,6 +27,7 @@ const Home = () => {
           padlock={Icons["Padlock"]}
           icons={Icons["product_icons"]}
           productName={ProductInfo.name}
+          shippingTime={ProductInfo.shipping}
         ></ProductImage>
 
         <div className="product-details">
@@ -41,4 +42,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ProductHome;

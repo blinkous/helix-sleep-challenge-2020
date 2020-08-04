@@ -59,3 +59,11 @@
     padding: 0 var(--padding);
   }
 }
+
+@media (max-width: 480px) {
+  .logo {
+    width: 80%;
+    max-width: 16rem;
+    min-width: 14rem;
+  }
+}

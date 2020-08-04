@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles/index.css";
-import Home from "./components/Home";
+import ProductHome from "./components/ProductHome";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <ProductHome />
   </React.StrictMode>,
   document.getElementById("root")
 );
