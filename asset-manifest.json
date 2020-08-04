@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/helix-sleep-challenge-2020/static/css/main.226132e2.chunk.css",
+    "main.css": "/helix-sleep-challenge-2020/static/css/main.85077421.chunk.css",
     "main.js": "/helix-sleep-challenge-2020/static/js/main.b689ed71.chunk.js",
     "main.js.map": "/helix-sleep-challenge-2020/static/js/main.b689ed71.chunk.js.map",
     "runtime-main.js": "/helix-sleep-challenge-2020/static/js/runtime-main.3d9389f3.js",
@@ -8,15 +8,15 @@
     "static/js/2.a076560b.chunk.js": "/helix-sleep-challenge-2020/static/js/2.a076560b.chunk.js",
     "static/js/2.a076560b.chunk.js.map": "/helix-sleep-challenge-2020/static/js/2.a076560b.chunk.js.map",
     "index.html": "/helix-sleep-challenge-2020/index.html",
-    "precache-manifest.fd47a5d70cf694cb47b48439f82ac9f0.js": "/helix-sleep-challenge-2020/precache-manifest.fd47a5d70cf694cb47b48439f82ac9f0.js",
+    "precache-manifest.ab10575ba386b24a3ff61811dc98c923.js": "/helix-sleep-challenge-2020/precache-manifest.ab10575ba386b24a3ff61811dc98c923.js",
     "service-worker.js": "/helix-sleep-challenge-2020/service-worker.js",
-    "static/css/main.226132e2.chunk.css.map": "/helix-sleep-challenge-2020/static/css/main.226132e2.chunk.css.map",
+    "static/css/main.85077421.chunk.css.map": "/helix-sleep-challenge-2020/static/css/main.85077421.chunk.css.map",
     "static/js/2.a076560b.chunk.js.LICENSE.txt": "/helix-sleep-challenge-2020/static/js/2.a076560b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3d9389f3.js",
     "static/js/2.a076560b.chunk.js",
-    "static/css/main.226132e2.chunk.css",
+    "static/css/main.85077421.chunk.css",
     "static/js/main.b689ed71.chunk.js"
   ]
 }

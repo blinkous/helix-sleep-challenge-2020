@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1826c3e210c450e31a3146d4da0cc015",
+    "revision": "db117422bb2c83d7e6475b1e3a5176e0",
     "url": "/helix-sleep-challenge-2020/index.html"
   },
   {
-    "revision": "b5b043607c1be54cf49f",
-    "url": "/helix-sleep-challenge-2020/static/css/main.226132e2.chunk.css"
+    "revision": "eb7b0b09578de4a3682a",
+    "url": "/helix-sleep-challenge-2020/static/css/main.85077421.chunk.css"
   },
   {
     "revision": "4590f3bbc49e7302a1ff",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/helix-sleep-challenge-2020/static/js/2.a076560b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b5b043607c1be54cf49f",
+    "revision": "eb7b0b09578de4a3682a",
     "url": "/helix-sleep-challenge-2020/static/js/main.b689ed71.chunk.js"
   },
   {

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/helix-sleep-challenge-2020/precache-manifest.fd47a5d70cf694cb47b48439f82ac9f0.js"
+  "/helix-sleep-challenge-2020/precache-manifest.ab10575ba386b24a3ff61811dc98c923.js"
 );
 
 self.addEventListener('message', (event) => {
