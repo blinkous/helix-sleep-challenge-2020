@@ -7,7 +7,6 @@ Available for viewing here:
 
 1. Clone/download the repo
 2. Run `yarn install`
-3. Run `yarn start`
-   The project should open at [http://localhost:3000](http://localhost:3000)
+3. Run `yarn start`, the project should open at [http://localhost:3000](http://localhost:3000)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
